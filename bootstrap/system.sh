@@ -2,8 +2,8 @@
 
 set -xe
 
-TARGET_HOSTNAME="raspberrypi"
-TARGET_TIMEZONE="Europe/Madrid"
+TARGET_HOSTNAME="index01"
+TARGET_TIMEZONE="America/New_York"
 ROOT_PASS=raspberry
 
 # base stuff
@@ -11,7 +11,7 @@ apk add ca-certificates
 update-ca-certificates
 echo "root:$ROOT_PASS" | chpasswd
 setup-hostname $TARGET_HOSTNAME
-echo "127.0.0.1    $TARGET_HOSTNAME $TARGET_HOSTNAME.localdomain" > /etc/hosts
+echo "127.0.0.1    $TARGET_HOSTNAME $TARGET_HOSTNAME.netmonk3y.local" > /etc/hosts
 setup-keymap es es
 
 # time

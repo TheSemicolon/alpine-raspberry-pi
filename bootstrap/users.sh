@@ -2,7 +2,7 @@
 
 set -xe
 
-FIRST_USER_NAME=pi
+FIRST_USER_NAME=pdavis
 FIRST_USER_PASS=raspberry
 
 apk add sudo
